@@ -4,6 +4,6 @@ import androidx.compose.ui.graphics.vector.ImageVector
 
 data class BottomNavigationBarItem(
     val title: String,
-    val selectedItem: ImageVector,
-    val unselectedItem: ImageVector
+    val route: String,
+    val icon: ImageVector,
 )

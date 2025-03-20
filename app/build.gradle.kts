@@ -8,7 +8,7 @@ plugins {
 
 android {
     namespace = "com.quo.booksurfer"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.quo.booksurfer"
@@ -45,8 +45,20 @@ dependencies {
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
+    // Hilt
     implementation(libs.hilt)
     implementation(libs.hiltNavigationCompose)
+    // Retrofit
+    implementation(libs.retrofit2)
+    implementation(libs.retrofit2GsonConverter)
+    //OkHttp
+    implementation(libs.okhttp3)
+    implementation(libs.okhttp3Logging)
+    //Coroutines
+    implementation(libs.coroutinesCore)
+    implementation(libs.coroutinesAndroid)
+    //Coroutine Lifecycle Scopes
+    implementation(libs.lifecycleViewModel)
     kapt(libs.hiltCompiler)
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))

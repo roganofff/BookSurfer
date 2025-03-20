@@ -6,6 +6,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import com.quo.booksurfer.presentation.screens.detail.DetailScreen
 import com.quo.booksurfer.presentation.screens.search.SearchScreen
 
 @Composable
@@ -28,7 +29,8 @@ fun NavigationGraph(
         composable(
             route = MainDestinations.Details.name,
         ) {
-
+            DetailScreen(
+            )
         }
     }
 }
